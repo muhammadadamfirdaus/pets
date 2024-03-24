@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <div id="hero">
+    <div id="hero" className="rounded-bl-[40px] rounded-br-[40px]">
       <div className="rectangle"></div>
       <div className="rectangle"></div>
       <div className="rectangle"></div>

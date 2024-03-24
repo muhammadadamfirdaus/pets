@@ -196,6 +196,9 @@
   &.object-1 {
     background-image: url("../../public/images/banners/object-1.png");
   }
+  &.object-2 {
+    background-image: url("../../public/images/banners/object-2.png");
+  }
 }
 
 .card {
@@ -226,7 +229,7 @@
 }
 
 .banner {
-  & > .rectangle {
+  &.banner-1 > .rectangle {
     position: absolute;
     z-index: 0;
     &:nth-child(1) {
@@ -255,6 +258,35 @@
       }
     }
   }
+  &.banner-2 > .rectangle {
+    position: absolute;
+    z-index: 0;
+    &:nth-child(1) {
+      background-color: #f7dba7;
+      width: 788px;
+      height: 788px;
+      border-radius: 99px;
+      transform: translate(-205px, 182px) rotate(-60deg) scaleX(-1);
+      left: 0;
+    }
+    &:nth-child(2) {
+      background-color: rgba(252, 238, 213, 100%);
+      width: 788px;
+      height: 788px;
+      border-radius: 99px;
+      transform: translate(296px, -398px) rotate(-64deg) scaleX(-1);
+      right: 0;
+      @media screen and (max-width: 480px) {
+        transform: translate(148px, -459px) rotate(-74deg);
+      }
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+        transform: translate(48px, -440px) rotate(-74deg);
+      }
+      @media screen and (min-width: 1440px) {
+        transform: translate(196px, -398px) rotate(-64deg);
+      }
+    }
+  }
   & .object-1 {
     z-index: 1;
     width: 100%;
@@ -264,6 +296,22 @@
     &.position-left {
       @media screen and (min-width: 1024px) {
         background-position: bottom left;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      background-size: cover;
+    }
+  }
+
+  & .object-2 {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    &.position-right {
+      @media screen and (min-width: 1024px) {
+        background-position: bottom right;
       }
     }
     @media screen and (max-width: 480px) {

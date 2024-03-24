@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="rounded-tl-[40px] rounded-tr-[40px]">
       <div className="pt-16 pb-8 px-4 md:px-8 lg:px-32">
-        <div className="lg:flex bg-[#003459] p-8">
+        <div className="lg:flex bg-[#003459] p-8 rounded-2xl">
           <h3 className="font-bold text-2xl text-white mb-6 text-center lg:mb-0 lg:text-left lg:basis-2/5">Register now so you don&apos;t miss our programs</h3>
           <div className="flex flex-col bg-white p-3 h-full rounded-lg lg:flex-row lg:ml-5 lg:basis-3/5">
             <input type="email" name="emailSubscription" id="emailSubscriptionID" placeholder="Enter your email" className="border border-slate-500 border-solid outline-none rounded-lg px-4 py-2 basis-full" />

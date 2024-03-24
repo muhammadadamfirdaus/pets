@@ -1,6 +1,6 @@
 import React from "react";
-import { HiChevronRight } from "react-icons/hi2";
 import ProductFeaturedCard from "./ProductFeaturedCard";
+import Button from "./Button";
 
 export default function ProductFeatured({ data }) {
   // console.log(data);
@@ -11,9 +11,9 @@ export default function ProductFeatured({ data }) {
           <h3>Hard to choose right products for your pets?</h3>
           <h1 className="text-2xl font-bold">Our Products</h1>
         </div>
-        <button className="flex items-center px-7 py-3 rounded-full text-blue-950 border border-solid border-blue-950 text-sm leading-none max-h-[44px]">
-          View More <HiChevronRight size={14} className="ml-2" />
-        </button>
+        <Button type="more" first>
+          View More
+        </Button>
       </div>
       <div className="flex flex-wrap mt-7 list">
         {data.map((d, i) => (

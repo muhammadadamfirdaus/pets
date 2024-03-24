@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function Banner() {
   return (
@@ -12,8 +13,12 @@ export default function Banner() {
           <h2 className="text-2xl leading-[36px] font-bold md:text-2xl md:font-bold 2xl:text-4xl 2xl:leading-[54px] 2xl:font-bold text-[#003459]">Thousands more fun!</h2>
           <p className="mt-6 font-medium text-xs text-center md:text-right">Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
           <div className="flex my-4">
-            <button className="px-7 py-3 rounded-3xl text-blue-950 border border-solid border-blue-950 text-sm mr-4">View Intro</button>
-            <button className="px-7 py-3 rounded-3xl bg-blue-950 text-white text-sm">Explore Now</button>
+            <Button type={"play"} first className="mr-2 w-40">
+              View More
+            </Button>
+            <Button second className=" w-40">
+              View More
+            </Button>
           </div>
         </div>
       </div>

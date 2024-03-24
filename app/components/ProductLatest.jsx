@@ -1,6 +1,6 @@
 import React from "react";
-import { HiChevronRight } from "react-icons/hi2";
 import ProductCard from "./ProductCard";
+import Button from "./Button";
 
 export default function ProductLatest({ data }) {
   // console.log(data);
@@ -11,9 +11,9 @@ export default function ProductLatest({ data }) {
           <h3>What&apos;s new?</h3>
           <h1 className="text-2xl font-bold">Take a look at some of our pets</h1>
         </div>
-        <button className="flex items-center px-7 py-3 rounded-full text-blue-950 border border-solid border-blue-950 text-sm leading-none max-h-[44px]">
-          View More <HiChevronRight size={14} className="ml-2" />
-        </button>
+        <Button type="more" first>
+          View More
+        </Button>
       </div>
       <div className="flex flex-wrap mt-7 list">
         {data.map((d, i) => (

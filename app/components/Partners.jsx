@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { HiChevronRight } from "react-icons/hi2";
+import Button from "./Button";
 
 export default function Partners() {
   return (
@@ -11,9 +11,9 @@ export default function Partners() {
             Proud to be part of <span className="font-bold text-2xl">Pet Sellers</span>
           </h3>
         </div>
-        <button className="flex items-center px-7 py-3 rounded-full text-blue-950 border border-solid border-blue-950 text-sm leading-none max-h-[44px]">
-          View all our sellers <HiChevronRight size={14} className="ml-2" />
-        </button>
+        <Button type="more" first>
+          View all our sellers
+        </Button>
       </div>
 
       <div className="flex items-center mt-4 overflow-hidden">

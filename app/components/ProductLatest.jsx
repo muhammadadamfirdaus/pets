@@ -8,7 +8,7 @@ export default function ProductLatest({ data }) {
     <div className="py-16 px-4 md:px-8 lg:px-32">
       <div className="flex justify-between items-center">
         <div>
-          <h3>What's new?</h3>
+          <h3>What&apos;s new?</h3>
           <h1 className="text-2xl font-bold">Take a look at some of our pets</h1>
         </div>
         <button className="flex items-center px-7 py-3 rounded-full text-blue-950 border border-solid border-blue-950 text-sm leading-none max-h-[44px]">

@@ -16,26 +16,26 @@ export default function Partners() {
         </button>
       </div>
 
-      <div className="flex items-center h-16 mt-4 overflow-hidden">
-        <div className="flex-1">
+      <div className="flex items-center mt-4 overflow-hidden">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-1.png" width={88} height={64} className="w-full h-auto" alt="Partner 1" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-2.png" width={88} height={64} className="w-full h-auto" alt="Partner 2" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-3.png" width={88} height={64} className="w-full h-auto" alt="Partner 3" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-4.png" width={88} height={64} className="w-full h-auto" alt="Partner 4" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-5.png" width={88} height={64} className="w-full h-auto" alt="Partner 5" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-6.png" width={88} height={64} className="w-full h-auto" alt="Partner 6" />
         </div>
-        <div className="flex-1">
+        <div className="flex grow shrink basis-auto h-auto">
           <Image src="/images/partners/partner-7.png" width={88} height={64} className="w-full h-auto" alt="Partner 7" />
         </div>
       </div>

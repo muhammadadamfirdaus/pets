@@ -15,8 +15,8 @@ export default function Header() {
           <Image src="/images/logo/logo.png" alt="Logo" width={115} height={40} priority />
         </div>
 
-        <div className="px-4 md:order-2">
-          <div className="lg:flex lg:py-3 lg:pl-4 lg:pr-8 lg:bg-white lg:rounded-3xl">
+        <div className="px-4 md:order-2 lg:basis-1/3">
+          <div className="lg:flex lg:py-3 lg:pl-4 lg:pr-6 lg:bg-white lg:rounded-3xl">
             <HiMagnifyingGlass className={`mr-2`} size={20} />
             <input type="text" name="search" id="search" placeholder="Search something here!" className="border-0 outline-none hidden lg:flex text-sm" />
           </div>

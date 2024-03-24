@@ -1,8 +1,24 @@
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import "./styles/style.scss";
 
 const inter = Inter({ subsets: ["latin"] });
+const svngilroy = localFont({
+  src: [
+    {
+      path: "../public/fonts/SVNGilroy-Light.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/SVNGilroy-Bold.otf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
+  variable: "--font-svngilory",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${svngilroy.variable} font-sans`}>{children}</body>
     </html>
   );
 }

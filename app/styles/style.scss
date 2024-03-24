@@ -229,7 +229,7 @@
 }
 
 .banner {
-  &.banner-1 > .rectangle {
+  & > .rectangle {
     position: absolute;
     z-index: 0;
     &:nth-child(1) {

@@ -29,9 +29,9 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex justify-end md:order-4 md:flex-auto">
-          <div className="flex md:px-1 lg:px-6">
-            <Image src="/icons/flag-vietnam.svg" width={16} height={16} alt="flag Vietnam" />
-            <select id="countries" className="bg-transparent text-gray-900 text-sm rounded-lg focus:ring-zinc-400 focus:border-zinc-400 w-full py-4 basis-full">
+          <div className="flex md:px-1 lg:px-6 xl:px-0">
+            <Image src="/icons/flag-vietnam.svg" width={16} height={16} className="w-full h-auto" alt="flag Vietnam" />
+            <select id="countries" className="bg-transparent text-gray-900 text-sm rounded-lg focus:ring-zinc-400 focus:border-zinc-400 py-4">
               <option defaultValue={`VND`}>VND</option>
               <option value="USD">USD</option>
             </select>

@@ -29,7 +29,7 @@ export default function ProductFeaturedCard({ productFeatured }) {
         </div>
         {productFeatured.bonus && (
           <div className="flex mt-2 bg-[#FCEED5] px-2 py-1">
-            <Image src="./icons/present.svg" width={12} height={12} alt="present" />
+            <Image src="./icons/present.svg" width={12} height={12} className="w-full h-auto" alt="present" />
             <span className="text-[10px] capitalize ml-2 lg:text-xs">{productFeatured.bonusContent}</span>
           </div>
         )}
